@@ -8,8 +8,11 @@ public class Recommendation
   private int likes;
 
   private String imgLink;
+  
+  private String comment;
 
-
+  private String commentList[];
+  
   /* No Argument Constructor - same name as Class, no return type */
   public Recommendation()
   {
@@ -53,5 +56,14 @@ public class Recommendation
     imgLink = _imgLink;
   }
 
-
+  public String setComment(String newComment) {
+  commentList = Arrays.copyOf(commentList, commentList.length + 1);
+  commentList[commentList.length - 1] = newComment; 
+    return commentList;
+    
+  }
+  public String getComments() {
+    return Arrays.toString(commentList);
+  }
+  
 }
