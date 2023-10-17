@@ -25,6 +25,8 @@ public class Recommendation
 
       imgLink = "https://fl-1.cdn.flockler.com/embed/no-image.svg"
 
+      comment = " ";
+
   }
 
   /* Method definitions go here, after constructors */
