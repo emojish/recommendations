@@ -8,6 +8,8 @@ public class Recommendation
   private String author;
   private int likes;
   private String imgLink;
+  private String comment;
+  private String[] commentList;
   private int numOfRecommendations;
   private int month;
   private int day;
@@ -15,7 +17,6 @@ public class Recommendation
   private String date;
   private int dislikes;
   private boolean hasImage;
-  
   
   
 
@@ -37,6 +38,9 @@ public class Recommendation
       dislikes = 0;
       hasImage = false;
       numOfRecommendations = 0
+      comment = " ";
+      commentList = new String[0];
+
 
 
   }
@@ -108,6 +112,16 @@ public class Recommendation
     imgLink = _imgLink;
   }
 
+  public String setComment(String newComment) {
+    commentList = Arrays.copyOf(commentList, commentList.length + 1);
+    commentList[commentList.length - 1] = newComment; 
+    return commentList;
+    
+  }
+  public String getComments() {
+    return Arrays.toString(commentList);
+  }
+  
   public void setNumOfRecommendations(int _numOfRecommendations){
     numOfRecommendations = _numOfRecommendations
   }
@@ -119,6 +133,7 @@ public class Recommendation
   public void setHasImage(boolean _hasImage){
     hasImage = _hasImage;
   }
+
 
 
 
