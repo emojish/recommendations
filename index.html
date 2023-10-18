@@ -2,387 +2,299 @@
 <!--Syntax: <li class="{class}"> {name} recommends... </li> -->
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Recommendations</title>
-	     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700&display=swap" rel="stylesheet">
-    <!-- Latest compiled and minified CSS -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Recommendations</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <link href="https://bradleycodeu.github.io/styles.css" rel="stylesheet" type="text/css" />
-      	<link rel="stylesheet" href="recStyle.css">
-	<script src="https://bradleycodeu.github.io/script.js" defer></script>
-    </head>
-    <body>
-		<nav class="navbar navbar-expand-sm navbar-dark navbg">
-			<!-- Brand -->
-			<a class="navbar-brand" href="https://bradleycodeu.github.io/">
-				<h3 id="brandName" class="navbarHeading">
-					BradleyCodeU
-				</h3>
-			</a>
-			<ul class="navbar-nav ml-auto mt-2 mt-sm-0">
-				<li class="nav-item text-light">
-					<a class="nav-link" onclick="showMe('game');">
-					  <h3 class="navbarHeading">Games</h3>
-					</a>
-				</li>
-				<li class="nav-item text-light">
-					<a class="nav-link" onclick="showMe('movie');">
-					  <h3 class="navbarHeading">Movies</h3>
-					</a>
-				</li>
-				<li class="nav-item text-light">
-					<a class="nav-link" onclick="showMe('tv');">
-					  <h3 class="navbarHeading">TV</h3>
-					</a>
-				</li>
-				<li class="nav-item text-light">
-					<a class="nav-link" onclick="showMe('food');">
-					  <h3 class="navbarHeading">Food</h3>
-					</a>
-				</li>
-				<li class="nav-item text-light">
-					<a class="nav-link" onclick="showMe('book');">
-					  <h3 class="navbarHeading">Books</h3>
-					</a>
-				</li>
-				<li class="nav-item text-light">
-					<a class="nav-link" onclick="showMe('music');">
-					  <h3 class="navbarHeading">Music</h3>
-					</a>
-				</li>
-			</ul>
-	    </nav>
-        <div class=" m-5">
-        <h2>Recommendations</h2>
-        <ul id="list-grid">
-            <li class="game">
-                <img alt="pokemon sword picture" src="https://assets1.ignimgs.com/2019/08/27/pokemon-sword---eshop---button-1566932968514.jpg">
-		Zach and Kye recommend Pokemon Sword for Switch
-            </li>
-            <li class="game">
-                <img alt="enter the gungeon picture" src="https://image.api.playstation.com/vulcan/ap/rnd/202010/1205/7iRqnxpwQtVuEFuOjBAW1hFz.png">
-		Steven recommends the Switch game Enter The Gungeon.
-            </li>
-            <li class="game">
-                <img alt="coffee talk picture" src="https://cdn-products.eneba.com/resized-products/kUe_DT6EZ5f0wNcItsF9girVEWfNJuez5ieu06oiXpo_350x200_2x-0.jpg">
-		Tre recommends Coffee Talk for Switch.
-            </li>
-            <li class="game">
-                <img alt="Just Shapes and Beats picture" src="https://store-images.s-microsoft.com/image/apps.48490.13730886355493425.5206edad-e4bc-42ca-93c1-abaf47b8bd59.057c4743-07ec-4ead-ba42-8c28865c379a?w=400&h=600">
-		Conlan recommends Just Shapes and Beats for Switch.
-            </li>
-            <li class="movie">
-                <img alt="Suicide Squad Picture" src="https://play-lh.googleusercontent.com/2DQIMwhOYvAgUrupYL4kOkxVNvKrKb1XpT-xWqKRgtXsy45RP0srT-gRSNAlyscDz1NI5k6leeNEhev0-AiU"> 
-		Will recommended the movie Suicide Squad (2021).
-            </li>
-            <li class="movie">
-                <img src="https://lumiere-a.akamaihd.net/v1/images/p_20cs_freeguy_homeent_21930_49e74453.jpeg?region=0%2C0%2C540%2C810" alt="Free Guy"> 
-		Logan recommends the movie Free Guy (2021) because "it was very funny and I felt I got my money's worth out of it."
-            </li>
-            <li class="movie">Juan and Hassan recommend the movie A Haunted House (2013)</li>
-            <li class="movie">Conner "recommends" the movie Mortal Kombat (2021) because "it's hilariously bad"</li>
-            <li class="book">
-		    <img alt="Lord of the Rings" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/The-Lord-of-the-Rings-The-Rings-of-Power-key-art-holizontal.jpg">
-		    Luc recommends the Lord of the Rings books. 
-            </li>
-            <li class="tv">Tommy recommends the Obi-Wan Kenobi tv show.</li>
-            <li class=game"">Steven recommends the online game Blaseball.</li>
-            <li class="book">Daksh recommends The Giving Tree by Shel Silverstein.</li>
-            <li class="book">Aws recommends Refugee, a novel by Alan Gratz.</li>
-            <li class="book">Maggie recommends The Echo Wife by Sarah Gailey.</li>
-            <li class="game">Alex recommends Mario Clash for Virtual Boy.</li>
-            <li class="game">Avery recommends Tony Hawk's Underground for Game Boy Advanced.</li>
-            <li class="game">Trevor recommends Dead By Daylight.</li>
-            <li class="game">Owen recommends Tron Legacy for Wii.</li>
-            <li class="game">Christopher recommends Wii Sports Resort for Wii U.</li>
-            <li class="tv">Brody recommends Breaking Bad.</li>
-            <li class="book">Will recommends The Creeping by Alexandra Sirowy.</li>
-            <li class="game">Leo recommends Warframe for Playstation 4.</li>
-            <li class="food">Ankit recommends the restaurant Taj Palace. Especially the chicken curry.</li>
-            <li class="food">Gable recommends the restaurant Noodles & Co. Especially the spicy Korean beef, but with chicken.</li>
-            <li class="food">Kaden recommends the restaurant Beef 'O' Brady's. Especially the wings.</li>
-            <li class="game">
-                <img alt="Piano Tiles 2 game" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Piano_Tiles_2_logo.png">
-		AJ recommends the Piano Tiles 2 game for iOS and Android.
-            </li>
-            <li class="book">Elena recommends the book Many Lives, Many Masters by Brian Weiss.</li>
-            <li class="game">
-                <img alt="Golf Blitz Game" src="https://play-lh.googleusercontent.com/PZSbatNnLmQvrdEl5dQn9McqQMJ8lar_f-IiHMNIA3-020qnValEKstewPwhSVE1zBu9">
-		Caleb recommends the mobile game Golf Blitz.
-            </li>
-            <li class="game">Aryan recommends the Playstation game God Of War 4.</li>
-            <li class="movie">Nay recommends the movie The Hate You Give.</li>
-            <li class="movie">Kohen recommends Ratatoing (2007) the offbrand version of Ratatouille.</li>
-            <li class="food">Lance recommends the restaurant CM Chicken especially the spicy fried chicken.</li>
-            <li class="movie">Miller recommends the movie Labyrinth (1986).</li>
-            <li class="movie">Elijah recommends the Lord of the Rings movies.</li>
-            <li class="game">
-                <img alt="Uncharted 4" src="https://upload.wikimedia.org/wikipedia/commons/d/df/E3_2015.jpg"> 
-		Aws recommends the Playstation game Uncharted 4.
-            </li>
-            <li class="game">Conlan recommend the game The Binding of Isaac.</li>
-            <li class="game">Tommy recommends the game Valorant.</li>
-            <li class="game">Moufid recommends the game Resident Evil 2.</li>
-            <li class="game">Uziel recommends the survival game DayZ.</li>
-            <li class="game">Will recommends the game Terraria</li>
-            <li class="movie">Owen recommends the movie Moonfall (2022)</li>
-            <li class="book">Avery recommends the book Six Of Crows by Leigh Bardugo</li>
-            <li class="music">
-		    <img src="">
-		    Rutbah recommends the Taylor Swift album Folklore
-		</li>
-            <li class="music">Isaac recommends the album Come Home The Kids Miss You by Jack Harlow</li>
-            <li class="game">Naseem recommends the game American Truck Simulator</li>
-            <li class="food">
-                <img alt="Chicken" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Fried-Chicken-Set.jpg/1280px-Fried-Chicken-Set.jpg"> 
-		AJ recommends the food known as chicken
-            </li>
-            <li class="food">Moufid recommends the restaurant Wingstop especially the lemon-pepper chicken wings</li>
-            <li class="game">
-                <img alt="Valorant" src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt3f072336e3f3ade4/63096d7be4a8c30e088e7720/Valorant_2022_E5A2_PlayVALORANT_ContentStackThumbnail_1200x625_MB01.png"> 
-		Vincent recommends the game Valorant
-            </li>
-            <li class="music">Grant recommends the album Goo by Sonic Youth</li>
-            <li class="game"> Noah recommends the game Hearts Of Iron 4 </li>
-            <li class="game"> Ibrahim recommends the PS4 game Little Nightmares </li>
-            <li class="food"> Owen recommends the restraunt out back steakhouse </li>
-            <li class="game">
-                <img alt="ddlc" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzwyoMgReinRSSGlrol9US-9N79Oz_Qc2b-f8QQE3_s1KASCBgCkOxsawD4ztQZZy66nQ:https://cdn.akamai.steamstatic.com/steam/apps/1388880/capsule_616x353.jpg%3Ft%3D1634143775&usqp=CAU"> 
-		Alex recommends Doki Doki Literature Club Plus!
-            </li>
-            <li class="game"> Kohen recommends Minecraft: Education Edition </li>
-            <li class="movie">Tre recommends the movie Bullet Train (2022)</li>
-	<li class="movie">Campbell recommends the movie Ex Machina (2014)</li>
-            <li class="game"> Allen recommends the game FTL Multiverse </li>
-            <li class="tv"> Aryan recommends the anime One Piece </li>
-            <li class="game"> Safwan recommends the game Microsoft Flight Simulator </li>
-            <li class="food"> Luc recommends the food chicken alfredo with pesto sauce </li>
-	    	<li class="food"> Jaysal recommends the restaurant Five Guys especially the cajun fries </li>
-        	<li class="music">Parker recommends the song Groove Tonight by Earth Wind and Fire</li>
-		<li class="music">Christopher recommends the album Her Loss by Drake and 21 Savage</li>
-		<li class="game">Wyatt recommends Little Nightmares 2 for Playstation.</li>
-		<li class="game">
-			<img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/en_US/games/switch/h/hollow-knight-switch/hero">
-			Ismail recommends the game Hollow Knight.
-		</li>
-		<li class="game">Hayden recommends the game God Of War Ragnarok for Playstation.</li>
-		<li class="music">
-			<img src="">
-			Rutbah recommends the Taylor Swift album Midnights
-		</li>
-		<li class="game">Elijah recommends the game Tom Clancy's Rainbow Six Siege.</li>
-		<li class="movie">
-			<img alt="Fight Club" src="https://m.media-amazon.com/images/I/51OsUdPrjoL._AC_.jpg">
-			Luke recommends the movie Fight Club (1999)
-		</li>
-		<li class="game">
-			<img alt="hell let loose game picture" src="https://cdn.akamai.steamstatic.com/steam/apps/686810/capsule_616x353.jpg?t=1658392444">
-			Jackson recommends the game Hell Let Loose.
-		    </li>
-		<li class="book">
-			<img src="">
-			Rutbah recommends the book We Were Liars by E. Lockhart.
-		</li>
-		<li class="game">Brody recommends New Super Mario Bros Wii for Wii</li>
-		<li class="music">Kohen recommends the Ehhh Eh Eh Eh song from TikTok</li>
-		<li class="movie">Craig recommends the movie War Games (1983)</li>
-		<li class="game">Isaac recommends Mortal Kombat Mobile</li>
-		<li class="game">Luc recommends Halo the original game</li>
-		<li class="music">Everett recommends the song Danced Herself To Death by The Wonderlands</li>
-		<li class="music">Grant recommends the album Jane Doe by Converge</li>
-		<li class="game">Dawson recommends Tom Clancy's Ghost Recon Breakpoint</li>
-		<li class="game">Tommy recommends Overwatch 2</li>
-		<li class="movie">Kohen recommends the movie Barnyard (2006)</li>
-		<li class="tv"> Adrian recommends the show Bojack Horseman </li>
-		<li class="game">Harsh recommends Elden Ring</li>
-		<li class="movie">Will recommends the movie Zoolander (2001)</li>
-		<li class="game">Owen recommends God of War Ragnarök for PS4/PS5</li>
-		<li class="game">Musab recommends Cyberpunk 2077</li>
-		<li class="movie">Campbell recommends the movie Puss in Boots: The Last Wish (2022) because it was pretty</li>
-		<li class="game">Naseem recommends Beam.NG drive for Steam because of the realistic crashes</li>
-	    	<li class="tv"> AJ recommends Al Pacino's Dunkaccino commercial for Dunkin' Donuts  </li>
-	    	<li class="game">Everett recommends the game Hollow Knight</li>
-		<li class="tv"> Ammar recommends the show Cobra Kai </li>
-		<li class="movie"> Rutbah recommends the movie Glass Onion (2022) </li>
-		<li class="tv"> Aryan recommends the show Avatar: The Last Airbender, but he does NOT recommend the movie. </li>
-		<li class="tv"> Elijah recommends the Bad Lip Reading YouTube video "SEAGULLS! (Stop It Now)" </li>
-	    	<li class="food"> Moufid recommends the restaurant Handel's Ice Cream especially the root beer float </li>
-		<li class="game">Alex recommends the recursive puzzle game Maquette for PS4/PS5</li>
-		<li class="movie"> Brody recommends the movie John Carpenter's The Thing (1982) </li>
-		<li class="game">Peyton recommends the game Call of Duty: Modern Warfare II (2022) </li>
-		<li class="tv"> Tommy recommends the show Breaking Bad </li>
-		<li class="game">Luke recommends the game Ape Escape for PS1</li>
-		<li class="game">Cain recommends the game Subnautica </li>
-		<li class="game">Christopher recommends Overwatch 2 </li>
-		<li class="tv"> Elena recommends the show Lockwood & Co. and also recommends the book series Lockwood & Co.</li>
-		<li class="game">Kevin recommends the mobile game League of Legends: Wild Rift </li>
-		<li class="game">Campbell recommends the game Fire Emblem Engage for Switch </li>
-		
-		<li class="game">Aidan N recommends the game Mount & Blade: Warband </li>
-		<li class="food"> Ankit recommends the cookies & cream milkshake from Chick-Fil-A </li>
-		<li class="food"> Harsh recommends the Oreo McFlurry at McDonalds because it slaps </li>
-		<li class="game"> Uziel recommends the game Halo 3 (2007) for Xbox and PC </li>
-		<li class="game">Aiden S recommends the game Sekiro: Shadows Die Twice </li>
-		<li class="food"> Elijah recommends the Dave's Hot Chicken </li>
-		<li class="tv">Daksh recommends the show South Park.</li>
-		<li class="game">Jackson V recommends the game Russian Roulette: One Life on Steam </li>
-		<li class="music">Grant recommends the album Rainbow Bridge 3 by Sematary</li>
-		<li class="game">Cameron recommends the game Persona 5 </li>
-		<li class="music">Ankit recommends the artist DJ Khaled</li>
-		<li class="music">Ismail recommends the album Yumeno Garden by the band Last Dinosaurs</li>
-		<li class="game">Conlan recommends the game Splatoon 3 for Switch </li>
-		<li class="game">Aryan recommends the game Cities: Skylines </li>
-		<li class="game">Aidan N recommends the game Red Dead Redemption 2 </li>
-		<li class="music">Steven recommends the album Discipline by the band The Garages</li>
-		 <li class="game"> Adrian recommends the game It Takes Two </li>
-		<li class="game"> Vincent recommends the game League of Legends </li>
-		<li class="music">Grant recommends the album Fallen by the band Evanescence</li>
-		<li class="game">Cameron recommends the 2023 remake of the game Dead Space </li>
-		<li class="food"> Luc recommends the food asparagus especially with butter </li>
-		<li class="food"> Jaysal recommends Piada especially the pasta bowl </li>
-		 <li class="game"> Hayden recommends the game Terraria </li>
-		<li class="movie"> Brody recommends the movie Die Hard (1988) </li>
-		 <li class="game"> Safwan recommends the game Call of Duty Warzone II </li>
-		<li class="movie">AJ recommends Jeremy Renner, star of the hit movie The Hurt Locker (2008)</li>
-		<li class="music">Lance recommends the album Brighter Days by the band Shades Of Blue</li>
-		<li class="game"> Allen recommends tModLoader, which is basically modded Terraria </li>
-		<li class="game"> Campbell recommends the game Sonic Robo Blast 2 Persona </li>
-		<li class="game"> Peyton recommends the game The Last of Us Part I </li>
-		<li class="movie"> Ankit recommends the movie Creed 3 </li>
-		<li class="game"> Noah recommends the game Star Wars: Empire at War: Forces of Corruption especially the mod Fall Of The Republic </li>
-		<li class="food"> Maggie recommends Zaytoon Mediterranean Grill especially the salad bowl </li>
-		<li class="music">Aryan recommends the song Understand by Boy With Uke</li>
-		<li class="movie"> Leo recommends the movie Book Of Life (2014) </li>
-		<li class="tv">Dawson recommends the show The Last Kingdom.</li>
-		<li class="game"> Will recommends the Calamity mod for the game Terraria </li>
-		<li class="food"> Gable recommends peanut butter M&Ms </li>
-		<li class="game"> Cain recommends the Create mod for the game Minecraft </li>
-		<li class="book">Christopher recommends the book The Men of Fox Company: History and Recollections of Company F, 291st Infantry Regiment, Seventy-Fifth Infantry Division by Scott Adams</li>
-		<li class="game"> Wyatt recommends the game The Stanley Parable Ultra Deluxe </li>
-		<li class="music">AJ recommends the song 4'33" by John Cage</li>
-		<li class="game"> Aws recommends the game The Last of Us Part II</li>
-		<li class="movie"> Kevin recommends the movie John Wick Chapter 4 (2023) </li>
-		<li class="music">Miller recommends the song Stacked Actors by Foo Fighters</li>
-		<li class="game"> Brody recommends the game Resident Evil 4 </li>
-		<li class="game"> Aiden S recommends the game Metroid Prime Remastered for Switch  </li>
-		<li class="music">Elijah recommends the song Crab Rave by Noisestorm</li>
-		<li class="tv">Elaina recommends the show All Of Us Are Dead</li>
-		<li class="movie"> Kaden recommends the movie The Super Mario Bros. Movie (2023) </li>
-		<li class="game"> Allen recommends the game Starbound especially the Frackin Universe mod</li>
-		<li class="music">Grant recommends the album Ohms by Deftones</li>
-		<li class="game"> Peyton recommends the game Dead Island 2 </li>
-		<li class="food"> Kohen recommends the food/meme Lab Banana </li>
-		<li class="movie"> Harsh recommends the movie The Greatest Showman (2017) </li>
-		<li class="book"> Luke recommends the book Fist Of The North Star </li>
-		<li class="tv"> Musab recommends the show Narcos </li>
-		<li class="music"> Christopher recommends the album Victorious: The Aftermath Deluxe Edition by Skillet </li>
-		<li class="tv"> Wyatt recommends the show Sleepy Hollow (2013)</li>
-		<li class="food"> Luc recommends the food known as Provolone cheese </li>
-		<li class="game"> Noah recommends the game Star Wars Jedi: Survivor </li>
-		<li class="book"> Ibrahim recommends the book The Eternal Husband (1870) by Fyodor Dostoevsky </li>
-		<li class="food"> Ammar recommends the traditional Pakistani dish Aloo Keema </li>
-		<li class="book"> Campbell recommends the book Do Androids Dream of Electric Sheep? (1968) by Philip K. Dick </li>
-		<li class="music">Leo recommends the song Rudulf by Gene Autrey</li>
-		<li class="music">Grant recommends the album Volcanic Bird Enemy and the Voiced Concern by Lil Ugly Mane</li>
-		<li class="game"> Aiden S recommends the game The Legend of Zelda: Tears of the Kingdom</li>
-		<li class="game"> Noah recommends the strategy/battle game Steel Division 2</li>
-		<li class="game"> Harsh recommends the game Project Zomboid</li>
-		<li class="game"> Luke recommends the game Shin Megami Tensei Nocturne</li>
-		<li class="game"> Tre recommends the game Steven Universe Unleash the Light</li>
-		<li class="music"> Miller recommends the album Wake Up & It's Over by Lovejoy</li>
-		<li class="tv"> Ammar recommends the tv show Sweet Tooth </li>
-		<li class="music"> Vincent recommends the song Good Boy Gone Bad by TOMORROW X TOGETHER</li>
-		<li class="game"> Campbell recommends the game Shrek 2 for PS2 </li>
-		<li class="movie"> Brody recommends the movie Evil Dead 2 </li>
-		<li class="music"> Grant recommends the album Piñata by Freddie Gibbs</li>
-		<li class="music"> Aryan recommends Amish Paradise by Weird Al</li>
-		<li class="game"> Campbell recommends the game Baba Is You </li>
-		<li class="movie"> Brody recommends the movie The Simpsons Movie </li>
-		<li class="music"> Grant recommends the album Mellow Gold by Beck</li>
-		<li class="music"> Brody recommends the song Rasputin by Boney M.</li>
-		<li class="music"> Peyton recommends the song Allstar by Smash Mouth</li>
-		<li class="book"> Safwan recommends the book Refugee by Alan Gratz</li>
-		<li class="game"> Wyatt recommends the game Cult Of The Lamb </li>
-		<li class="music"> Naseem recommends the song Dear Mama by Tupac</li>
-		<li class="game"> Peyton recommends the game Batman: Arkham Knight</li>
-		<li class="game"> Leo recommends the game Lego Star Wars: The Complete Saga </li>
-		<li class="movie"> Peyton recommends the movie Star Wars: Episode III – Revenge of the Sith </li>
-		<li class="game"> Aidan N recommends the game For Honor </li>
-		<li class="music"> Wyatt recommends the song Redesign Your Logo by Lemon Demon</li>
-		<li class="movie"> Safwan recommends the movie Alvin and the Chipmunks: The Road Chip (2015)</li>
+    <link href="https://bradleycodeu.github.io/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="recStyle.css">
+    <script src="https://bradleycodeu.github.io/script.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark navbg">
+     <a class="navbar-brand" href="https://bradleycodeu.github.io/"><h3 id="brandName" class="navbarHeading">BradleyCodeU</h3></a>
+     <ul class="navbar-nav ml-auto mt-2 mt-sm-0">
+      <li class="nav-item text-light"><a class="nav-link" onclick="showMe('game');"><h3 class="navbarHeading">Games</h3></a></li>
+      <li class="nav-item text-light"><a class="nav-link" onclick="showMe('movie');"><h3 class="navbarHeading">Movies</h3></a></li>
+      <li class="nav-item text-light"><a class="nav-link" onclick="showMe('tv');"><h3 class="navbarHeading">TV</h3></a></li>
+      <li class="nav-item text-light"><a class="nav-link" onclick="showMe('food');"><h3 class="navbarHeading">Food</h3></a></li>
+      <li class="nav-item text-light"><a class="nav-link" onclick="showMe('book');"><h3 class="navbarHeading">Books</h3></a></li>
+      <li class="nav-item text-light"><a class="nav-link" onclick="showMe('music');"><h3 class="navbarHeading">Music</h3></a></li>
+     </ul>
+    </nav>
+    <div class=" m-5">
+      <h2>Recommendations</h2>
+      <ul id="list-grid">
+        <!-- ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍ -->
+        <!-- ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍ -->
+        <!-- ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍ -->
+        <!-- ↓↓↓A̠D̠D̠ ̠N̠E̠W̠ ̠P̠O̠S̠T̠S̠ ̠H̠E̠R̠E̠░̠░̠░̠▒̠▒̠▓̠▓̠▒̠▒̠░̠░̠░̠A̠D̠D̠ ̠N̠E̠W̠ ̠P̠O̠S̠T̠S̠ ̠H̠E̠R̠E̠░̠░̠░̠▒̠▒̠▓̠▓̠▒̠▒̠░̠░̠░̠A̠D̠D̠ ̠N̠E̠W̠ ̠P̠O̠S̠T̠S̠ ̠H̠E̠R̠E̠░̠░̠░̠▒̠▒̠▓̠▓̠▒̠▒̠░̠░̠░̠A̠D̠D̠ ̠N̠E̠W̠ ̠P̠O̠S̠T̠S̠ ̠H̠E̠R̠E̠░̠░̠░̠▒̠▒̠▓̠▓̠▒̠▒̠░̠░̠░̠A̠D̠D̠ ̠N̠E̠W̠ ̠P̠O̠S̠T̠S̠ ̠H̠E̠R̠E̠░̠░̠░̠▒̠▒̠▓̠▓̠▒̠▒̠░̠░̠░̠A̠D̠D̠ ̠N̠E̠W̠ ̠P̠O̠S̠T̠S̠ ̠H̠E̠R̠E̠░̠░̠░̠▒̠▒̠▓̠▓̠▒̠▒̠░̠░̠░̠A̠D̠D̠ ̠N̠E̠W̠ ̠P̠O̠S̠T̠S̠ ̠H̠E̠R̠E̠↓↓↓ -->
 
-		<li class="movie"> Ian recommends the movie Oppenheimer (2023) because it's really historical </li>
-		<li class="movie"> Said recommends the Netflix movie The Old Guard (2021) because it's a good action movie </li>
-		<li class="movie"> Ben recommends the movie Grown Ups (2010) because it's really funny </li>
-		<li class="game"> Tyler recommends the game Disco Elysium because it has a really well-written story </li>
-		<li class="game"> Brice recommends the game Mario Galaxy because it's too good to pass up </li>
-		<li class="game"> Assad recommends the game PUBG because it's a battle royale </li>
-		<li class="movie"> Aws recommends the movie John Wick (2014) because it's filled with action </li>
-		<li class="movie"> Sophia recommends the movie Super Mario Bros (2023) because it's funny, fun, and epic </li>
-		<li class="music"> Leo recommends the album Late Registration by Kanye West because it's beautiful </li>
-		<li class="tv"> Zack recommends the animated tv show One Piece because it's really long and it has the best story </li>
-		<li class="game"> Yash recommends the game Uno because stacking cards is fun </li>
-		<li class="game"> Luke recommends the game Hotline Miami because it's fast-paced and action packed </li>
-		<li class="game"> Aidan H recommends the game Rounds for STEAM because it's stupid </li>
-		<li class="book"> Ethan C recommends the sci-fi book Sythe by Neal Shusterman because it has a crazy story</li>
-		<li class="food"> Julian recommends the food spaghetti from Spagetti Warehouse because the sauce </li>
-		<li class="food"> Gabe recommends Carfagna's fettuccine alfredo because their alfredo sauce is immaculate </li>
-		<li class="music"> Campbell recommends the album Bewitched by Laufey especially the song Lovesick </li>
-		<li class="book"> Allen R recommends the sci-fi book Otherworld by Jason Segel because it's really exciting</li>
-		<li class="game"> Chance recommends the game God of War Ragnarök for PS4/5 because it has a unique story </li>
-		<li class="game"> Alex recommends the game Lies Of P because it has in-depth combat and interesting choice systems </li>
-                <li class="music"> Lance T recommends the album Frozen In Time by Ace Of Hearts especially the song Find Me In Your Dreams </li>
-		<li class="movie"> Darius recommends the movie Pixels (2015) because it's funny </li>
-		<li class="game"> Gordon recommends the game Roblox because theres so many games </li>
-		<li class="game"> Braydon recommends the game It Takes Two because it's fun to play with friends </li>
-		<li class="movie"> Robert recommends the movie The Hangover (2009) because it's funny </li>
-		<li class="movie"> Owen recommends the movie The Shawshank Redemption (1994) because it's cool </li>
-		<li class="game"> Chance recommends the card game Blackjack because there a lot of strategy and luck </li>
-		<li class="movie"> Craig recommends the movie Catch Me If You Can (2002) because it's based on a true story </li>
-		<li class="music"> Abe recommends the album For All The Dogs by Drake especially the song Virginia Beach </li>
-		<li class="game"> Jackson V recommends the game Papers Please because it has a great story </li>
-		<li class="game"> Isaiah recommends the game Sea Of Thieves because he enjoys the PVP gameplay </li>
-		<li class="music"> Yaqeen recommends the album Process by Sampha because it's emotional </li>
-		<li class="book">Maggie recommends The Woman in the Library by Sulari Gentill because it has a very interesting plot twist.</li>
+        <!--Classes: "game", "book", "food", "movie", "tv", "music"-->
+        <!--Syntax: <li class="{class}"> {name} recommends... </li> -->
 
 
 
+        <li class="book">Maggie recommends The Woman in the Library by Sulari Gentill because it has a very interesting plot twist.</li>
+        <li class="music"> Yaqeen recommends the album Process by Sampha because it's emotional </li>
+        <li class="game"> Isaiah recommends the game Sea Of Thieves because he enjoys the PVP gameplay </li>
+        <li class="game"> Jackson V recommends the game Papers Please because it has a great story </li>
+        <li class="music"> Abe recommends the album For All The Dogs by Drake especially the song Virginia Beach </li>
+        <li class="movie"> Craig recommends the movie Catch Me If You Can (2002) because it's based on a true story </li>
+        <li class="game"> Chance recommends the card game Blackjack because there a lot of strategy and luck </li>
+        <li class="movie"> Owen recommends the movie The Shawshank Redemption (1994) because it's cool </li>
+        <li class="movie"> Robert recommends the movie The Hangover (2009) because it's funny </li>
+        <li class="game"> Braydon recommends the game It Takes Two because it's fun to play with friends </li>
+        <li class="game"> Gordon recommends the game Roblox because theres so many games </li>
+        <li class="movie"> Darius recommends the movie Pixels (2015) because it's funny </li>
+        <li class="music"> Lance T recommends the album Frozen In Time by Ace Of Hearts especially the song Find Me In Your Dreams </li>
+        <li class="game"> Alex recommends the game Lies Of P because it has in-depth combat and interesting choice systems </li>
+        <li class="game"> Chance recommends the game God of War Ragnarök for PS4/5 because it has a unique story </li>
+        <li class="book"> Allen R recommends the sci-fi book Otherworld by Jason Segel because it's really exciting</li>
+        <li class="music"> Campbell recommends the album Bewitched by Laufey especially the song Lovesick </li>
+        <li class="food"> Gabe recommends Carfagna's fettuccine alfredo because their alfredo sauce is immaculate </li>
+        <li class="food"> Julian recommends the food spaghetti from Spagetti Warehouse because the sauce </li>
+        <li class="book"> Ethan C recommends the sci-fi book Sythe by Neal Shusterman because it has a crazy story</li>
+        <li class="game"> Aidan H recommends the game Rounds for STEAM because it's stupid </li>
+        <li class="game"> Luke recommends the game Hotline Miami because it's fast-paced and action packed </li>
+        <li class="game"> Yash recommends the game Uno because stacking cards is fun </li>
+        <li class="tv"> Zack recommends the animated tv show One Piece because it's really long and it has the best story </li>
+        <li class="music"> Leo recommends the album Late Registration by Kanye West because it's beautiful </li>
+        <li class="movie"> Sophia recommends the movie Super Mario Bros (2023) because it's funny, fun, and epic </li>
+        <li class="movie"> Aws recommends the movie John Wick (2014) because it's filled with action </li>
+        <li class="game"> Assad recommends the game PUBG because it's a battle royale </li>
+        <li class="game"> Brice recommends the game Mario Galaxy because it's too good to pass up </li>
+        <li class="game"> Tyler recommends the game Disco Elysium because it has a really well-written story </li>
+        <li class="movie"> Ben recommends the movie Grown Ups (2010) because it's really funny </li>
+        <li class="movie"> Said recommends the Netflix movie The Old Guard (2021) because it's a good action movie </li>
+        <li class="movie"> Ian recommends the movie Oppenheimer (2023) because it's really historical </li>
+        <li class="movie"> Safwan recommends the movie Alvin and the Chipmunks: The Road Chip (2015)</li>
+        <li class="music"> Wyatt recommends the song Redesign Your Logo by Lemon Demon</li>
+        <li class="game"> Aidan N recommends the game For Honor </li>
+        <li class="movie"> Peyton recommends the movie Star Wars: Episode III – Revenge of the Sith </li>
+        <li class="game"> Leo recommends the game Lego Star Wars: The Complete Saga </li>
+        <li class="game"> Peyton recommends the game Batman: Arkham Knight</li>
+        <li class="music"> Naseem recommends the song Dear Mama by Tupac</li>
+        <li class="game"> Wyatt recommends the game Cult Of The Lamb </li>
+        <li class="book"> Safwan recommends the book Refugee by Alan Gratz</li>
+        <li class="music"> Peyton recommends the song Allstar by Smash Mouth</li>
+        <li class="music"> Brody recommends the song Rasputin by Boney M.</li>
+        <li class="music"> Grant recommends the album Mellow Gold by Beck</li>
+        <li class="movie"> Brody recommends the movie The Simpsons Movie </li>
+        <li class="game"> Campbell recommends the game Baba Is You </li>
+        <li class="music"> Aryan recommends Amish Paradise by Weird Al</li>
+        <li class="music"> Grant recommends the album Piñata by Freddie Gibbs</li>
+        <li class="movie"> Brody recommends the movie Evil Dead 2 </li>
+        <li class="game"> Campbell recommends the game Shrek 2 for PS2 </li>
+        <li class="music"> Vincent recommends the song Good Boy Gone Bad by TOMORROW X TOGETHER</li>
+        <li class="tv"> Ammar recommends the tv show Sweet Tooth </li>
+        <li class="music"> Miller recommends the album Wake Up & It's Over by Lovejoy</li>
+        <li class="game"> Tre recommends the game Steven Universe Unleash the Light</li>
+        <li class="game"> Luke recommends the game Shin Megami Tensei Nocturne</li>
+        <li class="game"> Harsh recommends the game Project Zomboid</li>
+        <li class="game"> Noah recommends the strategy/battle game Steel Division 2</li>
+        <li class="game"> Aiden S recommends the game The Legend of Zelda: Tears of the Kingdom</li>
+        <li class="music">Grant recommends the album Volcanic Bird Enemy and the Voiced Concern by Lil Ugly Mane</li>
+        <li class="music">Leo recommends the song Rudulf by Gene Autrey</li>
+        <li class="book"> Campbell recommends the book Do Androids Dream of Electric Sheep? (1968) by Philip K. Dick </li>
+        <li class="food"> Ammar recommends the traditional Pakistani dish Aloo Keema </li>
+        <li class="book"> Ibrahim recommends the book The Eternal Husband (1870) by Fyodor Dostoevsky </li>
+        <li class="game"> Noah recommends the game Star Wars Jedi: Survivor </li>
+        <li class="food"> Luc recommends the food known as Provolone cheese </li>
+        <li class="tv"> Wyatt recommends the show Sleepy Hollow (2013)</li>
+        <li class="music"> Christopher recommends the album Victorious: The Aftermath Deluxe Edition by Skillet </li>
+        <li class="tv"> Musab recommends the show Narcos </li>
+        <li class="book"> Luke recommends the book Fist Of The North Star </li>
+        <li class="movie"> Harsh recommends the movie The Greatest Showman (2017) </li>
+        <li class="food"> Kohen recommends the food/meme Lab Banana </li>
+        <li class="game"> Peyton recommends the game Dead Island 2 </li>
+        <li class="music">Grant recommends the album Ohms by Deftones</li>
+        <li class="game"> Allen recommends the game Starbound especially the Frackin Universe mod</li>
+        <li class="movie"> Kaden recommends the movie The Super Mario Bros. Movie (2023) </li>
+        <li class="tv">Elaina recommends the show All Of Us Are Dead</li>
+        <li class="music">Elijah recommends the song Crab Rave by Noisestorm</li>
+        <li class="game"> Aiden S recommends the game Metroid Prime Remastered for Switch </li>
+        <li class="game"> Brody recommends the game Resident Evil 4 </li>
+        <li class="music">Miller recommends the song Stacked Actors by Foo Fighters</li>
+        <li class="movie"> Kevin recommends the movie John Wick Chapter 4 (2023) </li>
+        <li class="game"> Aws recommends the game The Last of Us Part II</li>
+        <li class="music">AJ recommends the song 4'33" by John Cage</li>
+        <li class="game"> Wyatt recommends the game The Stanley Parable Ultra Deluxe </li>
+        <li class="book">Christopher recommends the book The Men of Fox Company: History and Recollections of Company F, 291st Infantry Regiment, Seventy-Fifth Infantry Division by Scott Adams</li>
+        <li class="game"> Cain recommends the Create mod for the game Minecraft </li>
+        <li class="food"> Gable recommends peanut butter M&Ms </li>
+        <li class="game"> Will recommends the Calamity mod for the game Terraria </li>
+        <li class="tv">Dawson recommends the show The Last Kingdom.</li>
+        <li class="movie"> Leo recommends the movie Book Of Life (2014) </li>
+        <li class="music">Aryan recommends the song Understand by Boy With Uke</li>
+        <li class="food"> Maggie recommends Zaytoon Mediterranean Grill especially the salad bowl </li>
+        <li class="game"> Noah recommends the game Star Wars: Empire at War: Forces of Corruption especially the mod Fall Of The Republic </li>
+        <li class="movie"> Ankit recommends the movie Creed 3 </li>
+        <li class="game"> Peyton recommends the game The Last of Us Part I </li>
+        <li class="game"> Campbell recommends the game Sonic Robo Blast 2 Persona </li>
+        <li class="game"> Allen recommends tModLoader, which is basically modded Terraria </li>
+        <li class="music">Lance recommends the album Brighter Days by the band Shades Of Blue</li>
+        <li class="movie">AJ recommends Jeremy Renner, star of the hit movie The Hurt Locker (2008)</li>
+        <li class="game"> Safwan recommends the game Call of Duty Warzone II </li>
+        <li class="movie"> Brody recommends the movie Die Hard (1988) </li>
+        <li class="game"> Hayden recommends the game Terraria </li>
+        <li class="food"> Jaysal recommends Piada especially the pasta bowl </li>
+        <li class="food"> Luc recommends the food asparagus especially with butter </li>
+        <li class="game">Cameron recommends the 2023 remake of the game Dead Space </li>
+        <li class="music">Grant recommends the album Fallen by the band Evanescence</li>
+        <li class="game"> Vincent recommends the game League of Legends </li>
+        <li class="game"> Adrian recommends the game It Takes Two </li>
+        <li class="music">Steven recommends the album Discipline by the band The Garages</li>
+        <li class="game">Aidan N recommends the game Red Dead Redemption 2 </li>
+        <li class="game">Aryan recommends the game Cities: Skylines </li>
+        <li class="game">Conlan recommends the game Splatoon 3 for Switch </li>
+        <li class="music">Ismail recommends the album Yumeno Garden by the band Last Dinosaurs</li>
+        <li class="music">Ankit recommends the artist DJ Khaled</li>
+        <li class="game">Cameron recommends the game Persona 5 </li>
+        <li class="music">Grant recommends the album Rainbow Bridge 3 by Sematary</li>
+        <li class="game">Jackson V recommends the game Russian Roulette: One Life on Steam </li>
+        <li class="tv">Daksh recommends the show South Park.</li>
+        <li class="food"> Elijah recommends the Dave's Hot Chicken </li>
+        <li class="game">Aiden S recommends the game Sekiro: Shadows Die Twice </li>
+        <li class="game"> Uziel recommends the game Halo 3 (2007) for Xbox and PC </li>
+        <li class="food"> Harsh recommends the Oreo McFlurry at McDonalds because it slaps </li>
+        <li class="food"> Ankit recommends the cookies & cream milkshake from Chick-Fil-A </li>
+        <li class="game">Aidan N recommends the game Mount & Blade: Warband </li>
+        <li class="game">Campbell recommends the game Fire Emblem Engage for Switch </li>
+        <li class="game">Kevin recommends the mobile game League of Legends: Wild Rift </li>
+        <li class="tv"> Elena recommends the show Lockwood & Co. and also recommends the book series Lockwood & Co.</li>
+        <li class="game">Christopher recommends Overwatch 2 </li>
+        <li class="game">Cain recommends the game Subnautica </li>
+        <li class="game">Luke recommends the game Ape Escape for PS1</li>
+        <li class="tv"> Tommy recommends the show Breaking Bad </li>
+        <li class="game">Peyton recommends the game Call of Duty: Modern Warfare II (2022) </li>
+        <li class="movie"> Brody recommends the movie John Carpenter's The Thing (1982) </li>
+        <li class="game">Alex recommends the recursive puzzle game Maquette for PS4/PS5</li>
+        <li class="food"> Moufid recommends the restaurant Handel's Ice Cream especially the root beer float </li>
+        <li class="tv"> Elijah recommends the Bad Lip Reading YouTube video "SEAGULLS! (Stop It Now)" </li>
+        <li class="tv"> Aryan recommends the show Avatar: The Last Airbender, but he does NOT recommend the movie. </li>
+        <li class="movie"> Rutbah recommends the movie Glass Onion (2022) </li>
+        <li class="tv"> Ammar recommends the show Cobra Kai </li>
+        <li class="game">Everett recommends the game Hollow Knight</li>
+        <li class="tv"> AJ recommends Al Pacino's Dunkaccino commercial for Dunkin' Donuts </li>
+        <li class="game">Naseem recommends Beam.NG drive for Steam because of the realistic crashes</li>
+        <li class="movie">Campbell recommends the movie Puss in Boots: The Last Wish (2022) because it was pretty</li>
+        <li class="game">Musab recommends Cyberpunk 2077</li>
+        <li class="game">Owen recommends God of War Ragnarök for PS4/PS5</li>
+        <li class="movie">Will recommends the movie Zoolander (2001)</li>
+        <li class="game">Harsh recommends Elden Ring</li>
+        <li class="tv"> Adrian recommends the show Bojack Horseman </li>
+        <li class="movie">Kohen recommends the movie Barnyard (2006)</li>
+        <li class="game">Tommy recommends Overwatch 2</li>
+        <li class="game">Dawson recommends Tom Clancy's Ghost Recon Breakpoint</li>
+        <li class="music">Grant recommends the album Jane Doe by Converge</li>
+        <li class="music">Everett recommends the song Danced Herself To Death by The Wonderlands</li>
+        <li class="game">Luc recommends Halo the original game</li>
+        <li class="game">Isaac recommends Mortal Kombat Mobile</li>
+        <li class="movie">Craig recommends the movie War Games (1983)</li>
+        <li class="music">Kohen recommends the Ehhh Eh Eh Eh song from TikTok</li>
+        <li class="game">Brody recommends New Super Mario Bros Wii for Wii</li>
+        <li class="book"> Rutbah recommends the book We Were Liars by E. Lockhart. <img src=""></li>
+        <li class="game"> Jackson recommends the game Hell Let Loose. <img alt="hell let loose game picture" src="https://cdn.akamai.steamstatic.com/steam/apps/686810/capsule_616x353.jpg?t=1658392444"></li>
+        <li class="movie"> Luke recommends the movie Fight Club (1999) <img alt="Fight Club" src="https://m.media-amazon.com/images/I/51OsUdPrjoL._AC_.jpg"></li>
+        <li class="game">Elijah recommends the game Tom Clancy's Rainbow Six Siege.</li>
+        <li class="music"> Rutbah recommends the Taylor Swift album Midnights <img src=""></li>
+        <li class="game">Hayden recommends the game God Of War Ragnarok for Playstation.</li>
+        <li class="game"> Ismail recommends the game Hollow Knight. <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/en_US/games/switch/h/hollow-knight-switch/hero"></li>
+        <li class="game">Wyatt recommends Little Nightmares 2 for Playstation.</li>
+        <li class="music">Christopher recommends the album Her Loss by Drake and 21 Savage</li>
+        <li class="music">Parker recommends the song Groove Tonight by Earth Wind and Fire</li>
+        <li class="food"> Jaysal recommends the restaurant Five Guys especially the cajun fries </li>
+        <li class="food"> Luc recommends the food chicken alfredo with pesto sauce </li>
+        <li class="game"> Safwan recommends the game Microsoft Flight Simulator </li>
+        <li class="tv"> Aryan recommends the anime One Piece </li>
+        <li class="game"> Allen recommends the game FTL Multiverse </li>
+        <li class="movie">Campbell recommends the movie Ex Machina (2014)</li>
+        <li class="movie">Tre recommends the movie Bullet Train (2022)</li>
+        <li class="game"> Kohen recommends Minecraft: Education Edition </li>
+        <li class="game"> Alex recommends Doki Doki Literature Club Plus! <img alt="ddlc" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzwyoMgReinRSSGlrol9US-9N79Oz_Qc2b-f8QQE3_s1KASCBgCkOxsawD4ztQZZy66nQ:https://cdn.akamai.steamstatic.com/steam/apps/1388880/capsule_616x353.jpg%3Ft%3D1634143775&usqp=CAU"></li>
+        <li class="food"> Owen recommends the restraunt out back steakhouse </li>
+        <li class="game"> Ibrahim recommends the PS4 game Little Nightmares </li>
+        <li class="game"> Noah recommends the game Hearts Of Iron 4 </li>
+        <li class="music">Grant recommends the album Goo by Sonic Youth</li>
+        <li class="game"> Vincent recommends the game Valorant <img alt="Valorant" src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt3f072336e3f3ade4/63096d7be4a8c30e088e7720/Valorant_2022_E5A2_PlayVALORANT_ContentStackThumbnail_1200x625_MB01.png"></li>
+        <li class="food">Moufid recommends the restaurant Wingstop especially the lemon-pepper chicken wings</li>
+        <li class="food"> AJ recommends the food known as chicken <img alt="Chicken" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Fried-Chicken-Set.jpg/1280px-Fried-Chicken-Set.jpg"></li>
+        <li class="game">Naseem recommends the game American Truck Simulator</li>
+        <li class="music">Isaac recommends the album Come Home The Kids Miss You by Jack Harlow</li>
+        <li class="music"> Rutbah recommends the Taylor Swift album Folklore <img src=""></li>
+        <li class="book">Avery recommends the book Six Of Crows by Leigh Bardugo</li>
+        <li class="movie">Owen recommends the movie Moonfall (2022)</li>
+        <li class="game">Will recommends the game Terraria</li>
+        <li class="game">Uziel recommends the survival game DayZ.</li>
+        <li class="game">Moufid recommends the game Resident Evil 2.</li>
+        <li class="game">Tommy recommends the game Valorant.</li>
+        <li class="game">Conlan recommend the game The Binding of Isaac.</li>
+        <li class="game"> Aws recommends the Playstation game Uncharted 4. <img alt="Uncharted 4" src="https://upload.wikimedia.org/wikipedia/commons/d/df/E3_2015.jpg"></li>
+        <li class="movie">Elijah recommends the Lord of the Rings movies.</li>
+        <li class="movie">Miller recommends the movie Labyrinth (1986).</li>
+        <li class="food">Lance recommends the restaurant CM Chicken especially the spicy fried chicken.</li>
+        <li class="movie">Kohen recommends Ratatoing (2007) the offbrand version of Ratatouille.</li>
+        <li class="movie">Nay recommends the movie The Hate You Give.</li>
+        <li class="game">Aryan recommends the Playstation game God Of War 4.</li>
+        <li class="game"> Caleb recommends the mobile game Golf Blitz. <img alt="Golf Blitz Game" src="https://play-lh.googleusercontent.com/PZSbatNnLmQvrdEl5dQn9McqQMJ8lar_f-IiHMNIA3-020qnValEKstewPwhSVE1zBu9"></li>
+        <li class="book">Elena recommends the book Many Lives, Many Masters by Brian Weiss.</li>
+        <li class="game"> AJ recommends the Piano Tiles 2 game for iOS and Android. <img alt="Piano Tiles 2 game" src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Piano_Tiles_2_logo.png"></li>
+        <li class="food">Kaden recommends the restaurant Beef 'O' Brady's. Especially the wings.</li>
+        <li class="food">Gable recommends the restaurant Noodles & Co. Especially the spicy Korean beef, but with chicken.</li>
+        <li class="food">Ankit recommends the restaurant Taj Palace. Especially the chicken curry.</li>
+        <li class="game">Leo recommends Warframe for Playstation 4.</li>
+        <li class="book">Will recommends The Creeping by Alexandra Sirowy.</li>
+        <li class="tv">Brody recommends Breaking Bad.</li>
+        <li class="game">Christopher recommends Wii Sports Resort for Wii U.</li>
+        <li class="game">Owen recommends Tron Legacy for Wii.</li>
+        <li class="game">Trevor recommends Dead By Daylight.</li>
+        <li class="game">Avery recommends Tony Hawk's Underground for Game Boy Advanced.</li>
+        <li class="game">Alex recommends Mario Clash for Virtual Boy.</li>
+        <li class="book">Maggie recommends The Echo Wife by Sarah Gailey.</li>
+        <li class="book">Aws recommends Refugee, a novel by Alan Gratz.</li>
+        <li class="book">Daksh recommends The Giving Tree by Shel Silverstein.</li>
+        <li class=game"">Steven recommends the online game Blaseball.</li>
+        <li class="tv">Tommy recommends the Obi-Wan Kenobi tv show.</li>
+        <li class="book"> Luc recommends the Lord of the Rings books. <img alt="Lord of the Rings" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/The-Lord-of-the-Rings-The-Rings-of-Power-key-art-holizontal.jpg"></li>
+        <li class="movie">Conner "recommends" the movie Mortal Kombat (2021) because "it's hilariously bad"</li>
+        <li class="movie">Juan and Hassan recommend the movie A Haunted House (2013)</li>
+        <li class="movie"> Logan recommends the movie Free Guy (2021) because "it was very funny and I felt I got my money's worth out of it." <img src="https://lumiere-a.akamaihd.net/v1/images/p_20cs_freeguy_homeent_21930_49e74453.jpeg?region=0%2C0%2C540%2C810" alt="Free Guy"></li>
+        <li class="movie"> Will recommended the movie Suicide Squad (2021). <img alt="Suicide Squad Picture" src="https://play-lh.googleusercontent.com/2DQIMwhOYvAgUrupYL4kOkxVNvKrKb1XpT-xWqKRgtXsy45RP0srT-gRSNAlyscDz1NI5k6leeNEhev0-AiU"></li>
+        <li class="game"> Conlan recommends Just Shapes and Beats for Switch. <img alt="Just Shapes and Beats picture" src="https://store-images.s-microsoft.com/image/apps.48490.13730886355493425.5206edad-e4bc-42ca-93c1-abaf47b8bd59.057c4743-07ec-4ead-ba42-8c28865c379a?w=400&h=600"></li>
+        <li class="game"> Tre recommends Coffee Talk for Switch. <img alt="coffee talk picture" src="https://cdn-products.eneba.com/resized-products/kUe_DT6EZ5f0wNcItsF9girVEWfNJuez5ieu06oiXpo_350x200_2x-0.jpg"></li>
+        <li class="game"> Steven recommends the Switch game Enter The Gungeon. <img alt="enter the gungeon picture" src="https://image.api.playstation.com/vulcan/ap/rnd/202010/1205/7iRqnxpwQtVuEFuOjBAW1hFz.png"></li>
+        <li class="game"> Zach and Kye recommend Pokemon Sword for Switch <img alt="pokemon sword picture" src="https://assets1.ignimgs.com/2019/08/27/pokemon-sword---eshop---button-1566932968514.jpg"></li>
+      </ul>
+    </div>
+    <script>
+      function shuffleList() {
+        let ul = document.getElementById("list-grid");
+        for (let i = ul.children.length; i >= 0; i--) {
+          ul.appendChild(ul.children[Math.random() * i | 0]);
+        }
+      }
+      shuffleList();
 
-		</ul>
-	    </div>
-        
-        <script>
-            function shuffleList(){
-		    let ul = document.getElementById("list-grid");
-		    for (let i = ul.children.length; i >= 0; i--) {
-			ul.appendChild(ul.children[Math.random() * i | 0]);
-		    }
-	    }
-	    shuffleList();
+      function hideAll() {
+        let mylist = document.getElementById("list-grid").children;
+        for (let each of mylist) {
+          each.style.display = "none";
+        }
+      }
 
-            function hideAll() {
-                let mylist = document.getElementById("list-grid").children;
-                for (let each of mylist) {
-                    each.style.display = "none";
-                }
-            }
-
-            function showMe(classString) {
-                hideAll();
-                let mylist = document.getElementsByClassName(classString);
-                for (let each of mylist) {
-                    each.style.display = "block";
-                }
-            }
-		
-        </script>
-    </body>
+      function showMe(classString) {
+        hideAll();
+        let mylist = document.getElementsByClassName(classString);
+        for (let each of mylist) {
+          each.style.display = "block";
+        }
+      }
+    </script>
+  </body>
 </html>
