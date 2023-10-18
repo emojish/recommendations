@@ -2,7 +2,7 @@ public class Recommendation
 {
 
   /* Instance variable declarations go here, before constructors */
-  // STEP 1 of 4: Add one private instance variable
+  // STEP 1 of 4: Add one private instance variable    
   private int views;
   private String description;
   private String author;
