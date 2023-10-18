@@ -7,21 +7,17 @@ public class Recommendation
   private String description;
   private String author;
   private int likes;
-  
-
   private String imgLink;
-
+  private int numOfRecommendations;
   private int month;
   private int day;
   private int year;
   private String date;
-
   private int dislikes;
-
   private boolean hasImage;
-
-
-
+  
+  
+  
 
   /* No Argument Constructor - same name as Class, no return type */
   public Recommendation()
@@ -32,16 +28,15 @@ public class Recommendation
       description = "This is a defult description";
       views =0;
       likes = 0;
-
       month = 0;
       day = 0;
       year = 0;
       date = "0/0/0";
-
       author = "John Doe";
       imgLink = "https://fl-1.cdn.flockler.com/embed/no-image.svg"
       dislikes = 0;
       hasImage = false;
+      numOfRecommendations = 0
 
 
   }
@@ -63,6 +58,11 @@ public class Recommendation
   public String getImgLink(){
     return imgLink;
   }
+
+  public int getNumOfRecommendations(){
+    return numOfRecommendations;
+  }
+
 
   public void setDate(int _month, int _day, int _year){
     month = _month;
@@ -108,6 +108,10 @@ public class Recommendation
     imgLink = _imgLink;
   }
 
+  public void setNumOfRecommendations(int _numOfRecommendations){
+    numOfRecommendations = _numOfRecommendations
+  }
+
   public void addDislike() {
     dislikes += 1;
   }
@@ -115,6 +119,7 @@ public class Recommendation
   public void setHasImage(boolean _hasImage){
     hasImage = _hasImage;
   }
+
 
 
 }
