@@ -11,7 +11,7 @@ public class Recommendation
   
   private String comment;
 
-  private String commentList[];
+  private String[] commentList;
   
   /* No Argument Constructor - same name as Class, no return type */
   public Recommendation()
@@ -26,6 +26,7 @@ public class Recommendation
       imgLink = "https://fl-1.cdn.flockler.com/embed/no-image.svg"
 
       comment = " ";
+      commentList = new String[0];
 
   }
 
@@ -59,8 +60,8 @@ public class Recommendation
   }
 
   public String setComment(String newComment) {
-  commentList = Arrays.copyOf(commentList, commentList.length + 1);
-  commentList[commentList.length - 1] = newComment; 
+    commentList = Arrays.copyOf(commentList, commentList.length + 1);
+    commentList[commentList.length - 1] = newComment; 
     return commentList;
     
   }
